@@ -38,7 +38,7 @@ export const routes: Routes = [
         component: GestionCommentairesComponent
     },
     {
-        path: 'gestionèstock',
+        path: 'gestion-stock',
         component: GestionStockComponent
     },
     {

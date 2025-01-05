@@ -1,1 +1,63 @@
-<p>gestion-stock works!</p>
+<app-sidebar></app-sidebar>
+<body>
+	<input type="checkbox" id="menu" name="">
+	<div class="content">
+		<main>
+			<!-- Button trigger modal -->
+<button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="float: right; background-color: #212529; color: white;">
+    Ajout meubles
+  </button>
+  
+  <!-- Modal ajout de meuble-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Meuble</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputText" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="Nom" aria-describedby="emailHelp" name="nom" [(ngModel)]="nom">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputText" class="form-label">Prix</label>
+              <input type="text" class="form-control" id="prixmble" aria-describedby="emailHelp" name="Prix" [(ngModel)]="prix">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputText1" class="form-label">Url Image</label>
+              <input type="text" class="form-control" id="Urlimage" name="image" [(ngModel)]="urlimage">
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Description</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="Ajoutmeuble()">Enregistrer</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cards meuble -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    @for (item of listmeuble(); track $index){ 
+    <div class="col">
+      <div class="card">
+        <img [src]="item.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.nom}}</h5>
+          <p class="card-text">{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  }
+  </div> 
+			
+		</main>
+	</div>
+</body>
