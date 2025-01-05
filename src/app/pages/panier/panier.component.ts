@@ -3,12 +3,12 @@ import { HeaderComponent } from '../../menu/header/header.component';
 import { FooterComponent } from '../../menu/footer/footer.component';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-panier',
   standalone: true,
-  imports: [HeaderComponent,FooterComponent],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  imports: [HeaderComponent, FooterComponent],
+  templateUrl: './panier.component.html',
+  styleUrl: './panier.component.css'
 })
-export class ContactComponent {
+export class PanierComponent {
 
 }

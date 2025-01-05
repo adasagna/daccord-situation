@@ -23,8 +23,9 @@ body {
 headeer top
 */
 .topbar{
-  background-color: #212529;
+  background-color: #212934;
   padding: 0;
+  border-bottom: 1px solid rgb(88, 85, 85);
 }
 
 .topbar .container .row {
@@ -161,7 +162,7 @@ li {
 }
 
 .mx-background-top-linear {
-    background: -webkit-linear-gradient(45deg, #F77100 48%, #1b1e21 48%);
-    background: -webkit-linear-gradient(left, #F77100 48%, #1b1e21 48%);
-    background: linear-gradient(45deg, #F77100 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(45deg, #F77100 48%, #212934 48%);
+    background: -webkit-linear-gradient(left, #F77100 48%, #212934 48%);
+    background: linear-gradient(45deg, #F77100 48%, #212934 48%);
 }
